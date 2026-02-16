@@ -1,0 +1,18 @@
+<section class="education-section">
+  <h2 class="section-title">Education</h2>
+  <div class="education-list">
+    @for (edu of education; track edu) {
+    <mat-card class="education-card">
+      <div class="edu-header">
+        <mat-icon class="edu-icon">school</mat-icon>
+        <div class="edu-info">
+          <h3>{{ edu.university }}</h3>
+          <span class="edu-degree">{{ edu.degree }}</span>
+          <span class="edu-year">{{ edu.year }}</span>
+          <span class="edu-grade">{{ edu.grade }}</span>
+        </div>
+      </div>
+    </mat-card>
+    }
+  </div>
+</section>

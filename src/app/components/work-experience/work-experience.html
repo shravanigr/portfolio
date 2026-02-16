@@ -1,0 +1,23 @@
+<section class="experience-section" id="experience">
+  <h2 class="section-title">Work Experience</h2>
+  <div class="experience-list">
+    @for (exp of experiences; track exp) {
+    <mat-card class="experience-card">
+      <div class="exp-header">
+        <mat-icon class="exp-icon">work</mat-icon>
+        <div class="exp-info">
+          <h3>{{ exp.role }}</h3>
+          <span class="exp-company">{{ exp.company }}</span>
+          <span class="exp-duration">{{ exp.duration }}</span>
+          <span class="exp-location">{{ exp.location }}</span>
+        </div>
+      </div>
+      <ul class="exp-details">
+        @for (item of exp.description; track item) {
+        <li>{{ item }}</li>
+        }
+      </ul>
+    </mat-card>
+    }
+  </div>
+</section>

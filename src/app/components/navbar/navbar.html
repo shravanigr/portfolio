@@ -1,0 +1,21 @@
+<mat-toolbar color="primary" class="navbar-toolbar">
+  <img src="../../assets/logo.svg" alt="Logo" class="navbar-logo" />
+  <span class="navbar-title">Shravani | Frontend Developer</span>
+  <span class="spacer"></span>
+  <button mat-icon-button class="menu-icon" (click)="isMenuOpen = !isMenuOpen">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <nav class="navbar-links">
+    <button mat-button (click)="scrollToSection('about')">About</button>
+    <button mat-button (click)="scrollToSection('projects')">Projects</button>
+    <button mat-button (click)="scrollToSection('experience')">Experience</button>
+    <button mat-button (click)="scrollToSection('contact')">Contact</button>
+  </nav>
+</mat-toolbar>
+
+<div class="mobile-menu" *ngIf="isMenuOpen">
+  <button mat-button (click)="scrollToSection('about')">About</button>
+  <button mat-button (click)="scrollToSection('projects')">Projects</button>
+  <button mat-button (click)="scrollToSection('experience')">Experience</button>
+  <button mat-button (click)="scrollToSection('contact')">Contact</button>
+</div>

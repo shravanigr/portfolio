@@ -1,0 +1,26 @@
+<section class="projects-section" id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-list">
+    <mat-card class="project-card" *ngFor="let project of projects">
+      <div class="project-header">
+        <h3>{{ project.title }}</h3>
+      </div>
+      <p class="project-desc">{{ project.description }}</p>
+      <div class="project-tech">
+        <span class="tech-chip" *ngFor="let tech of project.tech">{{ tech }}</span>
+      </div>
+      <a mat-button color="primary" class="project-link" [href]="project.link" target="_blank"
+        >View Code</a
+      >
+      <a
+        *ngIf="project.live"
+        mat-button
+        color="accent"
+        class="project-link"
+        [href]="project.live"
+        target="_blank"
+        >Live Demo</a
+      >
+    </mat-card>
+  </div>
+</section>

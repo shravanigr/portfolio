@@ -1,0 +1,19 @@
+/* Ensure the app takes up the full height of the screen */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Use Flexbox on the main container to push the footer down */
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* This makes the body/content area grow to fill space, pushing footer down */
+app-body,
+.main-content {
+  flex: 1;
+}

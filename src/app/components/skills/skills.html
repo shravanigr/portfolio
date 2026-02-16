@@ -1,0 +1,15 @@
+<section class="skills-section">
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="skills-grid">
+    @for (category of skillCategories; track category) {
+    <mat-card class="skill-card">
+      <h3 class="skill-category-title">{{ category.name }}</h3>
+      <mat-chip-set>
+        @for (skill of category.skills; track skill) {
+        <mat-chip>{{ skill }}</mat-chip>
+        }
+      </mat-chip-set>
+    </mat-card>
+    }
+  </div>
+</section>
