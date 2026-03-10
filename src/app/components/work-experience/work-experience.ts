@@ -17,7 +17,7 @@ export class WorkExperience {
       duration: 'Nov 2024 – Present',
       location: 'Bengaluru, India',
       description: [
-        'Currently working on the FedEx Returns Technology project - a comprehensive return management solution that improves the customer experience for e-commerce sellers.',
+        'Currently working on a logistics project - a comprehensive return management solution that improves the customer experience for e-commerce sellers.',
         'Developed and enhanced multiple UI features in alignment with evolving business requirements.',
         'Integrated RESTful APIs with front-end components to ensure seamless interaction with backend services.',
         'Delivered clean, maintainable, and testable code with 90% unit test coverage using Jasmine and Karma.',

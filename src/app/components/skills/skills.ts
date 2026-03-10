@@ -16,24 +16,12 @@ export class Skills {
       skills: ['HTML/CSS', 'TypeScript', 'JavaScript'],
     },
     {
-      name: 'Frameworks',
-      skills: ['Angular 2+', 'Angular Material UI'],
+      name: 'Frameworks & Technologies',
+      skills: ['Angular 2+', 'Angular Material UI', 'NgRx', 'Tailwind CSS', 'Splunk', 'Agility'],
     },
     {
       name: 'Tools & Methodologies',
-      skills: ['Agile (SCRUM)', 'GitHub', 'VSCode', 'Insomnia'],
-    },
-    {
-      name: 'Soft Skills',
-      skills: [
-        'Analytical Thinking',
-        'Debugging',
-        'Fast Learner',
-        'Adaptability',
-        'Communication',
-        'Teamwork',
-        'Innovation',
-      ],
+      skills: ['Agile (SCRUM)', 'GitHub', 'VSCode', 'Insomnia', 'GitHub Copilot', 'Cursor AI', 'Google Antigravity'],
     },
   ];
 }
