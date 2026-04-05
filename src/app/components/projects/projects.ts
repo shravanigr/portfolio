@@ -11,6 +11,13 @@ export const PROJECTS = [
     live: 'https://paper-and-tea.vercel.app',
     tech: ['Angular', 'NgRx', 'TypeScript', 'Tailwind CSS'],
   },
+  {
+    title: 'Nerd Herd',
+    description: 'A professional and responsive tutoring application',
+    link: '',
+    live: 'https://nerd-herd.vercel.app',
+    tech: ['React', 'Tailwind CSS', 'Magic UI'],
+  },
 ];
 
 @Component({

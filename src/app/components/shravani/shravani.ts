@@ -9,4 +9,11 @@ import { MatButtonModule } from '@angular/material/button';
   templateUrl: './shravani.html',
   styleUrl: './shravani.css',
 })
-export class Shravani {}
+export class Shravani {
+  scrollToProjects(): void {
+    const element = document.getElementById('projects');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+}

@@ -9,7 +9,7 @@
       <div class="project-tech">
         <span class="tech-chip" *ngFor="let tech of project.tech">{{ tech }}</span>
       </div>
-      <a mat-button color="primary" class="project-link" [href]="project.link" target="_blank"
+      <a *ngIf="project.link" mat-button color="primary" class="project-link" [href]="project.link" target="_blank"
         >View Code</a
       >
       <a
